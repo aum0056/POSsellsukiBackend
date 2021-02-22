@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon --watch './**/*.js' --exec babel-node ./app.js"
+    "dev": "nodemon --watch './**/*.js' --exec babel-node ./app.js",
+    "build": "babel app.js -d ./dist",
+    "start": "NODE_ENV=production node ./dist/app.js"
   },
   "author": "",
   "license": "ISC",
